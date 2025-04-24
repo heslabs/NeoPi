@@ -1,7 +1,7 @@
 # NeoPi
 
 
-#### Neoverse Edge Server: Hawkeye EDS-5410-0101
+### Neoverse Edge Server: Hawkeye EDS-5410-0101
 * Key Features
    * Up to 24-core Arm Neoverse-N2 Processors
    * Up to 48GB ECC DDR5
@@ -15,7 +15,7 @@
 <img src="https://github.com/user-attachments/assets/f652e263-107c-4de1-b764-d62ad9b1eac1" width=350>
 
 ---
-#### Remote access to Neoverse edge server
+### Remote access to Neoverse edge server
 ```
 $ sshpass -p rpi5demo ssh cx10@122.116.228.96 -X
 $ cd ~/ollama-chat
@@ -23,13 +23,13 @@ $ ollama serve &
 $ ollama run gemma3:27b $(cat ./quiz.txt)
 ```
 
-#### quiz.txt
+### quiz.txt
 ```
 What is the difference between Cortex-A55 and Cortex-A53?
 ```
 
 ---
-#### Chatbot response
+### Chatbot response
 
 ```
 root@hawkeye:~/ollama-chat# ollama run gemma3:27b $(cat ./quiz.txt)
