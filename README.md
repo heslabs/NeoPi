@@ -3,8 +3,8 @@
 
 ### Neoverse Edge Server: Hawkeye EDS-5410
 * Key Features
-   * Up to 24-core Arm Neoverse-N2 Processors
-   * Up to 48GB ECC DDR5
+   * 24-core Arm Neoverse-N2 Processors
+   * 48GB ECC DDR5
    * Up to 2x 100GbE QSFP56 (with Break out Cable)
    * 1x 1GbE RJ45
    * 1x USB-C USB 3.0
