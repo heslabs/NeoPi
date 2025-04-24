@@ -14,9 +14,7 @@
    * 1x USB-C USB 2.0 (Connect to MCU)
    * 1x m.2 M Key Connector for PCIe Extension
 
----
-
-<img src="https://github.com/user-attachments/assets/f652e263-107c-4de1-b764-d62ad9b1eac1" width=450>
+<img src="https://github.com/user-attachments/assets/f652e263-107c-4de1-b764-d62ad9b1eac1" width=350>
 
 ---
 #### Remote access to Neoverse edge server
