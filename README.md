@@ -29,13 +29,13 @@ $ ollama serve &
 $ ollama run gemma3:27b $(cat ./quiz.txt)
 ```
 
-### quiz.txt
+#### quiz.txt
 ```
 What is the difference between Cortex-A55 and Cortex-A53?
 ```
 
 ---
-### Chatbot response
+#### Chatbot response
 
 ```
 root@hawkeye:~/ollama-chat# ollama run gemma3:27b $(cat ./quiz.txt)
