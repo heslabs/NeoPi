@@ -9,7 +9,7 @@ $ ollama serve &
 $ ollama run gemma3:27b $(cat ./quiz.txt)
 ```
 
-#### quiz,txt
+#### quiz.txt
 ```
 What is the difference between Cortex-A55 and Cortex-A53?
 ```
