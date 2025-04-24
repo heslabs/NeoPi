@@ -1,6 +1,24 @@
 # NeoPi
 
 
+#### Neoverse Edge Server
+
+* Hawkeye EDS-5410-0101
+* Key Features
+   * Up to 24x Arm N2 Cores
+   * Up to 48GB ECC DDR5
+   * Up to 2x 100GbE QSFP56 (with Break out Cable)
+   * 1x 1GbE RJ45
+   * 1x USB-C USB 3.0
+   * 1x USB-C Consoles (Connect to Both CPU & MCU)
+   * 1x USB-C USB 2.0 (Connect to MCU)
+   * 1x m.2 M Key Connector for PCIe Extension
+
+---
+
+<img src="https://github.com/user-attachments/assets/f652e263-107c-4de1-b764-d62ad9b1eac1" width=450>
+
+---
 #### Remote access to Neoverse edge server
 ```
 $ sshpass -p rpi5demo ssh cx10@122.116.228.96 -X
