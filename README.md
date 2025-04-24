@@ -1,9 +1,7 @@
 # NeoPi
 
 
-#### Neoverse Edge Server
-
-* Hawkeye EDS-5410-0101
+#### Neoverse Edge Server: Hawkeye EDS-5410-0101
 * Key Features
    * Up to 24x Arm N2 Cores
    * Up to 48GB ECC DDR5
