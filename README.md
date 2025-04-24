@@ -3,7 +3,7 @@
 
 #### Remote access to Neoverse edge server
 ```
-$ sshpass -p rpi5demo ssh cx10@59.124.169.195 -X
+$ sshpass -p rpi5demo ssh cx10@122.116.228.96 -X
 $ cd ~/ollama-chat
 $ ollama serve &
 $ ollama run gemma3:27b $(cat ./quiz.txt)
