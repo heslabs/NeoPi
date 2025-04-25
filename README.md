@@ -17,9 +17,14 @@
 ---
 ### Remote access to Neoverse edge server
 
+Install sshpass on your client machine using the appropriate package manager, for example `brew install sshpass` on MacOS. Additionally, to enable X11 forwarding for any GUI based applications, you need to install the appropriate tools (e.g., `X11Quartz` on MacOS).
+Alternatively, you can manually enter the command each time. 
+
 ```
 $ sshpass -p <password> ssh cx10@122.116.228.96 -X
 ```
+
+Please note: you should automatically be the `root@hawkeye` user. Please do not exit to the `cx10` user.
 
 ### Launch Chatbot with Gemma3-27B model
 
