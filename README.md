@@ -28,7 +28,7 @@ $ sshpass -p <password> ssh cx10@122.116.228.96 -X
 $ ssh cx10@122.116.228.96 -X
 Password: xxxxx
 $ cd ~/ollama-chat
-$ . ./run.sh
+$ ./run.sh
 ```
 
 or 
