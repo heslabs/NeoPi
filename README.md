@@ -18,14 +18,14 @@
 ### Remote access to Neoverse edge server
 
 ```
-$ sshpass -p <password> ssh cx10@122.116.228.96 -X
+$ sshpass -p <password> ssh cx10@192.168.72.10 -X
 ```
 
 
 ### Launch Chatbot with Gemma3-27B model
 
 ```
-$ ssh cx10@122.116.228.96 -X
+$ ssh cx10@192.168.72.10 -X
 Password: xxxxx
 $ cd ~/ollama-chat
 $ ./run.sh
