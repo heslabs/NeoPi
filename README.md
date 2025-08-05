@@ -53,8 +53,8 @@ $ sshpass -p root ssh root@192.168.72.10 -X
 ### Launch Chatbot with Gemma3-27B model
 
 ```
-$ ssh cx10@192.168.72.10 -X
-Password: rpi5demo
+$ ssh root@192.168.72.10 -X
+Password: root
 $ cd ~/ollama-chat
 $ ./run.sh
 ```
