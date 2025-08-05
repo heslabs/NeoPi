@@ -42,7 +42,7 @@ https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
 ### Remote access to Neoverse edge server
 
 ```
-$ ssh cx10@192.168.72.10 -X
+$ ssh demo@192.168.72.10 -X
 Password: rpi5demo 
 or
 $ sudo apt install sshpass
