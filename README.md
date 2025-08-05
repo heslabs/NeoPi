@@ -14,6 +14,15 @@
 
 <img src="https://github.com/user-attachments/assets/f652e263-107c-4de1-b764-d62ad9b1eac1" width=350>
 
+
+---
+### Connect to WiFi Router
+
+```
+SSID: SPACE or SPACE_5G
+Password: arm12345
+```
+
 ---
 ### Remote access to Neoverse edge server
 
