@@ -23,7 +23,7 @@ SSID: SPACE or SPACE_5G
 Password: arm12345
 ```
 
-Or use brower to login ASUS WiFi router
+Or use brower to log into admin of ASUS WiFi router
 ```
 https://192.168.72.1
 Login: admin
