@@ -18,6 +18,10 @@
 ### Remote access to Neoverse edge server
 
 ```
+$ ssh cx10@192.168.72.10 -X
+Password: rpi5demo 
+or
+$ sudo apt install sshpass
 $ sshpass -p rpi5demo ssh cx10@192.168.72.10 -X
 ```
 
