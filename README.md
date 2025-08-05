@@ -18,7 +18,7 @@
 ### Remote access to Neoverse edge server
 
 ```
-$ sshpass -p <password> ssh cx10@192.168.72.10 -X
+$ sshpass -p rpi5demo ssh cx10@192.168.72.10 -X
 ```
 
 
@@ -26,7 +26,7 @@ $ sshpass -p <password> ssh cx10@192.168.72.10 -X
 
 ```
 $ ssh cx10@192.168.72.10 -X
-Password: xxxxx
+Password: rpi5demo
 $ cd ~/ollama-chat
 $ ./run.sh
 ```
