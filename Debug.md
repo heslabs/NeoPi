@@ -14,8 +14,10 @@ kill -9 177056
 ```
 
 
-```
-Troubleshooting and Resolution:
+---
+### Troubleshooting and Resolution:
+
 Identify the process using the port:
+```
 Linux/macOS: Use lsof -i :<port_number> or netstat -tulnp | grep <port_number> to identify the process ID (PID) and name of the application using the port.
 ```
