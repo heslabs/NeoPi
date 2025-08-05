@@ -31,6 +31,12 @@ Password: arm123
 ```
 
 ---
+### Download SSH terminal utility
+
+Download PuTTY - a free implementation of SSH and Telnet for Windows and Unix platforms.
+* https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
+
+---
 ### Remote access to Neoverse edge server
 
 ```
