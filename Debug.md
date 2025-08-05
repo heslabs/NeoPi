@@ -21,3 +21,9 @@ Identify the process using the port:
 ```
 Linux/macOS: Use lsof -i :<port_number> or netstat -tulnp | grep <port_number> to identify the process ID (PID) and name of the application using the port.
 ```
+
+
+```
+ps aux | grep ollama
+demo      176965  0.1  0.8 504064 141728 pts/0   Sl   17:33   0:00 konsole -e $SHELL -c "ollama serve; $SHELL"
+```
