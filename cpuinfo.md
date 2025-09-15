@@ -105,3 +105,18 @@ tmpfs           5.0M     0  5.0M   0% /run/lock
 /dev/nvme0n1p1   64M  6.0K   64M   1% /boot/efi
 tmpfs           4.8G     0  4.8G   0% /run/user/0
 ```
+
+---
+### Network
+
+```
+demo@hawkeye:~/admin$ ifconfig
+eth2: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 192.168.52.101  netmask 255.255.255.0  broadcast 192.168.52.255
+        inet6 fe80::4260:5aff:fe02:efd2  prefixlen 64  scopeid 0x20<link>
+        ether 40:60:5a:02:ef:d2  txqueuelen 1000  (Ethernet)
+        RX packets 4603  bytes 541156 (541.1 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 1179  bytes 200037 (200.0 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+```
