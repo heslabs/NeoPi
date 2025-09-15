@@ -2,7 +2,7 @@
 
 
 ---
-### OS: uname -a
+### uname -a
 
 ```
 root@hawkeye:~# uname -a
