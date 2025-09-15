@@ -14,7 +14,8 @@ putty -serial -sercfg 115200,8,n,1,N -fn "client:Ubuntu Mono 16"  /dev/ttyUSB0
 
 ```
 sudo ip a
-sudo vim /etc/netplan/00-installer-config.yaml
+sudo systemctl enable systemd-networkd.service
+sudo systemctl start systemd-networkd.service
 sudo netplan apply
 ```
 
