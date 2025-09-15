@@ -19,6 +19,36 @@ python3.12 ./bench_table.py
 ```
 
 ---
+### Build
+
+#### Compile Kernels
+```
+mkdir -p bin
+gcc -O0 -S -march=armv8-a+simd src/c/kernels/naive.c -o bin/naive.s
+gcc -O3 -S -march=armv8-a+simd src/c/kernels/fp32_neon.c -o bin/fp32_neon.s
+gcc -O3 -S -march=armv8-a+simd src/c/kernels/int8_neon.c -o bin/int8_neon.s
+```
+
+#### Benchmarking Test
+
+```
+mkdir -p results
+## Benchmarking - navie.c
+gcc -O0 -S -march=armv8-a+simd src/c/kernels/naive.c -o bin/naive.s
+gcc -O0 src/c/benchmark_naive.c -o bin/benchmark_naive -march=armv8-a+simd -lm ./bin/benchmark_naive
+
+## fp32_neon.c
+gcc -O3 -S -march=armv8-a+simd src/c/kernels/fp32_neon.c -o bin/fp32_neon.s
+gcc -O3 -ffast-math src/c/benchmark_fp32_neon.c -o bin/benchmark_fp32_neon -march=armv8-a+simd -lm ./bin/benchmark_fp32_neon
+
+## int8_neon.c
+gcc -O3 -S -march=armv8-a+simd src/c/kernels/int8_neon.c -o bin/int8_neon.s
+gcc -O3 -ffast-math src/c/benchmark_int8_neon.c -o bin/benchmark_int8_neon -march=armv8-a+simd -lm ./bin/benchmark_int8_neon
+```
+
+
+
+---
 ### Setup
 
 #### sudo apt install
