@@ -9,7 +9,7 @@ https://github.com/arm-university/AI-on-Arm
 ---
 ### Setup
 
-### sudo apt install
+#### sudo apt install
 
 ```
 sudo apt update
@@ -28,5 +28,14 @@ cd Python-3.12.0
 sudo make altinstall
 sudo make altinstall
 ## Python 3.12.0
+```
+
+#### Setup Python Virtual Environment
+
+```
+python3.12 -m venv aivenv
+source aivenv/bin/activate
+source aivenv/bin/activate
+python3.12 -m pip install --upgrade numpy matplotlib pandas torch transformers jupyterlab ipykernel ipywidgets seaborn sentencepiece
 ```
 
