@@ -51,7 +51,7 @@ gcc -O3 -ffast-math src/c/benchmark_int8_neon.c -o bin/benchmark_int8_neon -marc
 ---
 ### Setup
 
-#### 1. sudo apt install
+#### 1. Install essential development packages
 
 ```
 sudo apt update
