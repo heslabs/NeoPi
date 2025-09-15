@@ -77,7 +77,7 @@ sudo make altinstall
 ```
 python3.12 -m venv aivenv
 source aivenv/bin/activate
-source aivenv/bin/activate
+python3.12 -m pip install --upgrade pip
 python3.12 -m pip install --upgrade numpy matplotlib pandas torch transformers jupyterlab ipykernel ipywidgets seaborn sentencepiece
 ```
 
