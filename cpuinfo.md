@@ -90,3 +90,18 @@ Hugepagesize:     524288 kB
 Hugetlb:               0 kB
 
 ```
+
+---
+### SSD 
+
+```
+root@hawkeye:~# df -h
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/root       1.9T  968M  1.8T   1% /
+tmpfs            24G     0   24G   0% /dev/shm
+tmpfs           9.6G   23M  9.5G   1% /run
+tmpfs           5.0M     0  5.0M   0% /run/lock
+/dev/nvme0n1p2  224M   29M  178M  14% /boot
+/dev/nvme0n1p1   64M  6.0K   64M   1% /boot/efi
+tmpfs           4.8G     0  4.8G   0% /run/user/0
+```
