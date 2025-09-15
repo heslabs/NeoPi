@@ -91,7 +91,7 @@ tar -xf Python-3.12.0.tgz
 cd Python-3.12.0
 ./configure --enable-optimizations
 sudo make altinstall
-sudo make altinstall
+Python3 --version
 ## Python 3.12.0
 ```
 
