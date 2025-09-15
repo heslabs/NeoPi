@@ -2,12 +2,22 @@
 
 
 ---
-### OS
+### OS: uname -a
 
 ```
 root@hawkeye:~# uname -a
 Linux hawkeye 5.15.72-mb5421-release-1.0.0.b3 #1 SMP PREEMPT Mon Apr 14 17:55:27 CST 2025 aarch64 aarch64 aarch64 GNU/Linux
 
+```
+
+### lsb_release -a
+```
+root@hawkeye:~# lsb_release -a
+No LSB modules are available.
+Distributor ID: Ubuntu
+Description:    Ubuntu 22.04 LTS
+Release:        22.04
+Codename:       jammy
 ```
 
 ---
