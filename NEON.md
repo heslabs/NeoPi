@@ -21,7 +21,7 @@ python3.12 ./bench_table.py
 ---
 ### Build
 
-#### Compile Kernels
+#### 1. Compile Kernels
 ```
 mkdir -p bin
 gcc -O0 -S -march=armv8-a+simd src/c/kernels/naive.c -o bin/naive.s
@@ -29,7 +29,7 @@ gcc -O3 -S -march=armv8-a+simd src/c/kernels/fp32_neon.c -o bin/fp32_neon.s
 gcc -O3 -S -march=armv8-a+simd src/c/kernels/int8_neon.c -o bin/int8_neon.s
 ```
 
-#### Benchmarking Test
+#### 2. Benchmarking Test
 
 ```
 mkdir -p results
@@ -46,6 +46,29 @@ gcc -O3 -S -march=armv8-a+simd src/c/kernels/int8_neon.c -o bin/int8_neon.s
 gcc -O3 -ffast-math src/c/benchmark_int8_neon.c -o bin/benchmark_int8_neon -march=armv8-a+simd -lm ./bin/benchmark_int8_neon
 ```
 
+#### Plot Benchmarking
+
+```
+import matplotlib.pyplot as plt
+import pandas as pd
+# Load data from CSV files
+naive_data = pd.read_csv('results/naive_latency_results.csv')
+fp32_neon_data = pd.read_csv('results/fp32_neon_latency_results.csv')
+int8_neon_data = pd.read_csv('results/int8_neon_latency_results.csv')
+
+# Extract sizes and times
+sizes = naive_data['mSize']
+naive_times = naive_data['Latency(s)']
+fp32_neon_times = fp32_neon_data['Latency(s)']
+int8_neon_times = int8_neon_data['Latency(s)']
+
+diffs0 = round(naive_times / naive_times)
+diffs1 = round(naive_times / fp32_neon_times)
+diffs2 = round(naive_times / int8_neon_times)
+
+result = pd.concat([sizes, naive_times, diffs0, fp32_neon_times, diffs1, int8_neon_times, diffs2], axis=1)
+print(result)
+```
 
 
 ---
