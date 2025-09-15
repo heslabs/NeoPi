@@ -30,3 +30,20 @@ network:
         enP2p4s0:
             dhcp4: true
 ```
+
+
+---
+#### /etc/hosts
+
+```
+vim /etc/hosts
+127.0.0.1       localhost
+127.0.1.1       hawkeye
+127.0.0.1       ip6-localhost ip6-loopback
+```
+
+#### /etc/hostname
+```
+vim /etc/hostname
+hawkeye
+```
