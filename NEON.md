@@ -51,7 +51,7 @@ gcc -O3 -ffast-math src/c/benchmark_int8_neon.c -o bin/benchmark_int8_neon -marc
 ---
 ### Setup
 
-#### sudo apt install
+#### 1. sudo apt install
 
 ```
 sudo apt update
@@ -61,7 +61,7 @@ sudo apt install -y linux-perf
 ```
 
 
-#### Install Python-3.12.0
+#### 2. Install Python-3.12.0
 ```
 wget https://www.python.org/ftp/python/3.12.0/Python-3.12.0.tgz
 tar -xf Python-3.12.0.tgz
@@ -72,7 +72,7 @@ sudo make altinstall
 ## Python 3.12.0
 ```
 
-#### Setup Python Virtual Environment
+#### 3. Setup Python Virtual Environment
 
 ```
 python3.12 -m venv aivenv
